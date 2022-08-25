@@ -1,0 +1,50 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class="container flex">
+            <header>
+                    <form id="color-form" class="color-form flex">
+                        <input id="color-form-picker" type="color">
+                        
+                        <select id="color-form-type">
+                            <option value="monochrome">Monochrome</option>
+                            <option value="monochrome-dark">Monochrome dark</option>
+                            <option value="monochrome-light">Monochrome light</option>
+                            <option value="analogic">Analogic</option>
+                            <option value="complement">Complement</option>
+                            <option value="analogic-complement">Analogic complement</option>
+                            <option value="triad">Triad</option>
+                        </select>
+                        
+                        <button id="color-form-btn" type="submit">Get color scheme</button>
+                    </form>
+            </header>
+            
+            <main class="flex">
+                    <section id="color-panels" class="panel-section flex">
+                        <div id="panel-1" class="panel"></div>
+                        <div id="panel-2" class="panel"></div>
+                        <div id="panel-3" class="panel"></div>
+                        <div id="panel-4" class="panel"></div>
+                        <div id="panel-5" class="panel"></div>
+                    </section>
+                    
+                    <section id="color-values" class="value-section flex">
+                        <p class="value flex">#F55A5A</p>
+                        <p class="value flex">#2B283A</p>
+                        <p class="value flex">#FBF3AB</p>
+                        <p class="value flex">#AAD1B6</p>
+                        <p class="value flex">#A626D3</p>
+                    </section>
+            </main>
+        </div>
+        
+        <script src="index.js"></script>
+    </body>
+</html>

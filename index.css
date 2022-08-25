@@ -1,0 +1,221 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #1F2937;
+    text-align: center;
+}
+
+body *{
+    color: #D5D4D8;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+
+/****************
+    LAYOUT
+****************/
+
+.flex{
+    display: flex;
+}
+
+.container{
+    height: 100vh;
+    flex-direction: column;
+}
+
+@media (min-width:550px)
+{
+    .container{
+        max-width: 1000px;
+        margin: 0 auto;
+    }    
+}
+
+
+
+/* HEADER */
+
+header{
+    padding: 1.5em 0;
+    box-shadow: 0 0 10px 5px #182028;
+    z-index: 1;
+}
+
+.color-form{
+    height: 100%;
+    padding: 0 2em;
+    flex-direction: column;
+}
+
+.color-form input{
+    border: none;
+    padding: 0;
+    background-color: inherit;
+    height: 3.25em;
+    width: 100%;
+}
+
+.color-form select{
+    margin: 1em 0;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+}
+
+.color-form select,
+.color-form option{
+    background-color: #1F293A;
+    padding: 0.75em 1em;
+}
+
+.color-form option,
+.color-form button{
+    border: none;
+}
+
+.color-form button{
+    background-color: #3D4B60;
+    padding: 0.8em 1em;
+    border-radius: 6px;
+}
+
+.color-form input:hover,
+.color-form input:focus,
+.color-form select:hover,
+.color-form select:focus,
+.color-form button:hover,
+.color-form button:focus
+{
+    cursor: pointer;
+}
+
+.color-form select:hover,
+.color-form select:focus,
+.color-form button:hover,
+.color-form button:focus
+{
+    background-color: #D5D4D8;
+    color: #3D4B60;
+}
+
+@media (min-width:550px)
+{
+    header{
+        box-shadow: none;
+    }
+    
+    .color-form{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .color-form input{
+        width: 5em;
+    }    
+}
+
+
+
+/* MAIN */
+
+main{
+    flex-grow: 1;
+}
+
+.panel-section{
+    width: 100%;
+}
+
+.panel-section,
+.value-section{
+    flex-direction: column;
+    height: 100%;
+}
+
+.panel,
+.value{
+    height: 20%;
+}
+
+.value{
+    padding: 0 1em;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width:550px)
+{
+    main{
+        flex-direction: column;
+    }
+    
+    .panel-section,
+    .value-section{
+        flex-direction: row;
+    }
+    
+    .panel-section{
+        height: 100%;
+    }
+    
+    .value-section{
+        height: 0px;
+        padding: 2em 0;
+    }
+    
+    .panel,
+    .value{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .value{
+        padding: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#panel-1{
+    background-color: #F55A5A;
+}
+
+#panel-2{
+    background-color: #2B283A;
+}
+
+#panel-3{
+    background-color: #FBF3AB;
+}
+
+#panel-4{
+    background-color: #AAD1B6;
+}
+
+#panel-5{
+    background-color: #A626D3;
+}
